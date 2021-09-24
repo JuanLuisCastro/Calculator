@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Nivel 2 - ejercicio 1</title>
+</head>
+<body>
+    <section class="container">
+        <div class="grid-container">
+            <div class="screen" id="screen">0</div>
+            <div class="blank"></div>
+            <button class="box ac" id="reset" value="reset" onclick="reset()">C</button>
+            <button class="box division" id="division" value="division" onclick="operation(value)">/</button>
+            <button class="box" id="value7" value="7" onclick="number(value)">7</button>
+            <button class="box" id="value8" value="8" onclick="number(value)">8</button>
+            <button class="box" id="value9" value="9" onclick="number(value)">9</button>
+            <button class="box multiply" id="multiply" value="multiply" onclick="operation(value)"><ion-icon name="close-outline"></ion-icon></button>
+            <button class="box" id="value4" value="4" onclick="number(value)">4</button>
+            <button class="box" id="value5" value="5" onclick="number(value)">5</button>
+            <button class="box" id="value6" value="6" onclick="number(value)">6</button>
+            <button class="box rest" id="rest" value="rest" onclick="operation(value)"><ion-icon name="remove-outline"></ion-icon></button>
+            <button class="box" id="value1" value="1" onclick="number(value)">1</button>
+            <button class="box" id="value2" value="2" onclick="number(value)">2</button>
+            <button class="box" id="value3" value="3" onclick="number(value)">3</button>
+            <button class="box sum" id="sum" value="sum" onclick="operation(value)"><ion-icon name="add-outline"></ion-icon></button>
+            <button class="box" id="value0" value="0" onclick="number(value)">0</button>      
+            <button class="box" id="point" value="point" onclick="number('.')">.</button>
+            <button class="box result" id="result" value="result" onclick="result()"><ion-icon name="reorder-two-outline"></ion-icon></button>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>

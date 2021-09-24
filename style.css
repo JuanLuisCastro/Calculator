@@ -1,0 +1,117 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 98vh;
+	background: linear-gradient(230deg, #00ffbd, #84c8e5, #fa91f3);
+	background-size: 300% 300%;
+
+	animation: AnimationName 20s ease infinite;
+}
+.container {
+	background-color: #15355c;
+	border-radius: 20px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.30);
+}
+.grid-container {
+	width: 300px;
+	margin: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 110px;
+	grid-auto-rows: 70px;
+	gap: 2px;
+}
+
+.box {
+	background-color: rgba(0, 0, 0, 0.15);
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.blank {
+	cursor: default;
+}
+
+input {
+	align-items: center;
+	border: none;
+}
+button {
+	align-items: center;
+	border: none;
+	color: rgb(191, 191, 191);
+}
+.box:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+.screen {
+	grid-column: 1 / 5;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	align-items: flex-end;
+	padding: 0 10px;
+	font-size: 44px;
+	cursor: default;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.blank {
+	grid-column: 1 / 3;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.sum {
+	grid-area: 5 / 4 / 7 / 5;
+	background-color: rgba(0, 0, 0, 0.40);
+	font-weight: bolder;
+	align-items: center;
+	color: #ff0044;
+}
+.rest {
+	background-color: rgba(0, 0, 0, 0.40);
+	font-weight: bolder;
+	align-items: center;
+	color: #ff0044;
+}
+.multiply {
+	background-color: rgba(0, 0, 0, 0.40);
+	font-weight: bolder;
+	align-items: center;
+	color: #ff0044;
+}
+.division {
+	background-color: rgba(0, 0, 0, 0.40);
+	font-weight: bolder;
+	align-items: center;
+	color: #ff0044;
+}
+.result {
+	background-color: rgba(0, 0, 0, 0.40);
+	font-weight: bolder;
+	align-items: center;
+	color: #00ffbb;
+}
+.ac {
+	background-color: rgba(0, 0, 0, 0.40);
+	font-weight: bolder;
+	color: #00ffbb;
+}
+
+@keyframes AnimationName {
+	0% {
+		background-position: 0% 90%;
+	}
+	50% {
+		background-position: 100% 11%;
+	}
+	100% {
+		background-position: 0% 90%;
+	}
+}
